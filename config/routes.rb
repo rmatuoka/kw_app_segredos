@@ -1,5 +1,11 @@
 KwAppSegredos::Application.routes.draw do
   resources :dashboard
+  resources :login
+  resources:wall_posts do
+    collection do
+      post 'publish'
+    end
+  end
   
   root :to => "dashboard#index"
   # The priority is based upon order of creation:

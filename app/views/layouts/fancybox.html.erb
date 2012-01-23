@@ -4,18 +4,13 @@
  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
  <title>Os Segredos de Adriane Galisteu</title>
  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
-	<%= stylesheet_link_tag "template" %>
+	<%= stylesheet_link_tag "reset" %>
+	<%= stylesheet_link_tag "fancybox_internas" %>
 	<%= stylesheet_link_tag "fancybox/jquery.fancybox-1.3.4" %>  
-	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "jquery" %>
 	<%= javascript_include_tag "fancybox/jquery.mousewheel-3.0.4.pack.js" %>
 	<%= javascript_include_tag "fancybox/jquery.fancybox-1.3.4.pack.js" %>
 	<%= csrf_meta_tag %>
-	
-	<script>
-		$(document).ready(function(){
-			$("#publicar").fancybox();
-		});
-	</script>
 </head>
 <body>
 <p style="color: green"><%= flash[:notice] %></p>
@@ -42,4 +37,6 @@
 <%= yield %>
 </body>
 </html>
+
+
 

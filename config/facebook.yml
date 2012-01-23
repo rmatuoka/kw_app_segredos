@@ -1,0 +1,12 @@
+development:
+ app_id: 316274158411188
+ secret_key: afc3887cb1faeadb0d975640d5a00661
+ callback_url: http://localhost:3000/
+test:
+ app_id: 316274158411188
+ secret_key: afc3887cb1faeadb0d975640d5a00661
+ callback_url: http://localhost:3000/
+production:
+ app_id: 316274158411188
+ secret_key: afc3887cb1faeadb0d975640d5a00661
+ callback_url: http://localhost:3000/

@@ -7,6 +7,8 @@ gem 'rails', '3.0.10'
 
 gem 'mysql2', '~> 0.2.11'
 gem 'koala'
+gem 'mongrel'
+gem 'jquery-rails', '>= 1.0.12'
 
 # Use unicorn as the web server
 # gem 'unicorn'
