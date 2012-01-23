@@ -8,11 +8,11 @@
         </p>
         <br/>
        <%=form_tag '/wall_posts/publish', :remote => true%>
-        	<input type="Submit" name="PUBLICAR NO MEU MURAL" value="Publicar no meu mural" class="Bt1" />
+        	<input type="Submit" name="PUBLICAR NO MEU MURAL" value="Publicar no meu mural" class="Bt1" style="cursor:pointer;" />
 			<input type="hidden" name="title" value="<%=@hint.title%>">
 			<input type="hidden" name="hint" value="<%=@hint.hint%>">
 		
-        <input type="button" name="próximo segredo" value="próximo segredo" class="Bt2" onclick="window.location = '/'" />
+        <input type="button" name="próximo segredo" value="próximo segredo" class="Bt2" onclick="window.location = '/'" style="cursor:pointer;" />
         </form>
 		<br /><br/><br/>
        
