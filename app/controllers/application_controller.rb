@@ -3,16 +3,16 @@ class ApplicationController < ActionController::Base
   
   before_filter :parse_facebook_cookies
   def parse_facebook_cookies
-   puts "OAuth FB"
+   logger.info "OAuth FB"
    
    @facebook_cookies = Koala::Facebook::OAuth.new.get_user_info_from_cookies(cookies)
    
    if @facebook_cookies
-     puts "Leu"
+     logger.info "Leu"
    else
-    puts "Cookies vazio"
+     logger.info "Cookies vazio"
    end
    
-  puts "1 " + @facebook_cookies.to_s 
+  logger.info "1 " + @facebook_cookies.to_s 
   end
 end
