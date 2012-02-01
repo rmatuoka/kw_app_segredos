@@ -1,27 +1,19 @@
-<div class="Container">
-    <div class="Box_container">
-        <img src="images/tit_main.png" width="321" />  
-        <p class="Text_1"><br><br>
-        <b><%=@hint.title%></b><br/><br/>
-        
-        <%=@hint.hint%>
-        </p>
-        <br/>
-       <%=form_tag '/wall_posts/publish', :remote => true%>
-        	<input type="Submit" name="PUBLICAR NO MEU MURAL" value="Publicar no meu mural" class="Bt1" style="cursor:pointer;" />
+<div id='section'>
+	<div id='segredo'>
+    	<h1><%=@hint.title%></h1>
+        <p><%=@hint.hint%></p>
+        <img src='images/linha.png' />
+        <div id='botoes'>
+		<%=form_tag '/wall_posts/publish', :remote => true%>
 			<input type="hidden" name="title" value="<%=@hint.title%>">
 			<input type="hidden" name="hint" value="<%=@hint.hint%>">
-		
-        <input type="button" name="próximo segredo" value="próximo segredo" class="Bt2" onclick="window.location = '/'" style="cursor:pointer;" />
+			
+			<input type="image" src="/images/bt_publicar.jpg">
+        	<a href="/" class="proximo"><img src="images/bt_proximo.jpg" border="0" /></a>
         </form>
-		<br /><br/><br/>
-       
-            <br /><br /><br /><br />
-            <p><span class="Text_bot1">Ainda</span><span class="Text_bot2"> não conhece os</span><span class="Text_bot1"> segredos</span>
-            <span class="Text_bot2">de</span><span class="Text_bot3"> Adriane</span><span class="Text_bot4"> galisteu ?</span><br/>
-			<br/>
-			<span class="Text_bot3" style="font-size:14px;"><a href="http://www.segredosdeadriane.com.br" target="_blank" style="color:#daaf69;">www.segredosdeadriane.com.br</a></span>
-        </p>
+        </div>
+    </div>
+    <div id='footer'>
+    	<a href="http://www.segredosdeadriane.com.br"><img src="images/footer.png" border="0" /></a>
     </div>
 </div>
-</div><!-- end .Container -->
