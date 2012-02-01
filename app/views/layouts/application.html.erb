@@ -7,12 +7,6 @@
 	<%= stylesheet_link_tag "app" %>  
 	<%= javascript_include_tag :defaults %>
 	<%= csrf_meta_tag %>
-	
-	<script>
-		$(document).ready(function(){
-			$("#publicar").fancybox();
-		});
-	</script>
 </head>
 <body>
 <p style="color: green"><%= flash[:notice] %></p>
